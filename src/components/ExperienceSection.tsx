@@ -1,4 +1,5 @@
 import { Briefcase } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 interface Job {
   title: string;
@@ -94,9 +95,11 @@ const ExperienceSection = () => {
   return (
     <section id="experience" className="py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-heading font-bold text-foreground text-center mb-12">
-          Experience
-        </h2>
+        <ScrollReveal>
+          <h2 className="text-3xl sm:text-4xl font-heading font-bold text-foreground text-center mb-12">
+            Experience
+          </h2>
+        </ScrollReveal>
 
         <div className="relative">
           {/* Timeline line */}
@@ -106,34 +109,36 @@ const ExperienceSection = () => {
             {jobs.map((job, i) => {
               const badge = typeBadge[job.type];
               return (
-                <div key={i} className="relative pl-12 sm:pl-14">
-                  {/* Timeline dot */}
-                  <div className="absolute left-2.5 sm:left-3.5 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-background" />
+                <ScrollReveal key={i} delay={i * 0.06}>
+                  <div className="relative pl-12 sm:pl-14">
+                    {/* Timeline dot */}
+                    <div className="absolute left-2.5 sm:left-3.5 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-background" />
 
-                  <div className="bg-card rounded-2xl border border-border/60 p-5 shadow-sm">
-                    <div className="flex flex-wrap items-start justify-between gap-2 mb-1">
-                      <h3 className="font-heading font-bold text-foreground">{job.title}</h3>
-                      <span className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${badge.className}`}>
-                        {badge.label}
-                      </span>
+                    <div className="bg-card rounded-2xl border border-border/60 p-5 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex flex-wrap items-start justify-between gap-2 mb-1">
+                        <h3 className="font-heading font-bold text-foreground">{job.title}</h3>
+                        <span className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${badge.className}`}>
+                          {badge.label}
+                        </span>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-1 flex items-center gap-1.5">
+                        <Briefcase className="w-3.5 h-3.5" />
+                        {job.org}
+                      </p>
+                      <p className="text-xs text-muted-foreground mb-3">
+                        {job.location} · {job.dates}
+                      </p>
+                      <ul className="space-y-1.5">
+                        {job.bullets.map((b, j) => (
+                          <li key={j} className="text-sm text-muted-foreground flex gap-2">
+                            <span className="text-primary mt-1 shrink-0">•</span>
+                            {b}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-1 flex items-center gap-1.5">
-                      <Briefcase className="w-3.5 h-3.5" />
-                      {job.org}
-                    </p>
-                    <p className="text-xs text-muted-foreground mb-3">
-                      {job.location} · {job.dates}
-                    </p>
-                    <ul className="space-y-1.5">
-                      {job.bullets.map((b, j) => (
-                        <li key={j} className="text-sm text-muted-foreground flex gap-2">
-                          <span className="text-primary mt-1 shrink-0">•</span>
-                          {b}
-                        </li>
-                      ))}
-                    </ul>
                   </div>
-                </div>
+                </ScrollReveal>
               );
             })}
           </div>

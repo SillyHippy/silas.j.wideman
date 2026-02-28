@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 
 const links = [
   { label: "About", href: "#about" },
@@ -31,6 +31,16 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="/Silas_Wideman_Resume.pdf"
+              download
+              className="ml-2 inline-flex items-center gap-1.5 bg-primary text-primary-foreground rounded-full px-4 py-1.5 text-sm font-semibold hover:opacity-90 transition-opacity"
+            >
+              <Download className="w-3.5 h-3.5" />
+              Resume
+            </a>
+          </li>
         </ul>
 
         {/* Mobile toggle */}
@@ -58,6 +68,16 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href="/Silas_Wideman_Resume.pdf"
+                download
+                onClick={() => setOpen(false)}
+                className="block px-3 py-2 rounded-lg text-sm font-semibold text-primary hover:bg-secondary transition-colors"
+              >
+                📄 Download Resume
+              </a>
+            </li>
           </ul>
         </div>
       )}
