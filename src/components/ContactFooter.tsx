@@ -13,11 +13,11 @@ const ContactFooter = () => {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <a
-            href="mailto:silaswideman@gmail.com"
+            href="mailto:silas.j.wideman@gmail.com"
             className="inline-flex items-center gap-2 bg-card border border-border/60 rounded-full px-5 py-3 text-sm font-medium text-foreground hover:bg-secondary transition-colors shadow-sm"
           >
             <Mail className="w-4 h-4 text-primary" />
-            silaswideman@gmail.com
+            silas.j.wideman@gmail.com
           </a>
           <a
             href="tel:+14802959955"

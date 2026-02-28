@@ -9,7 +9,7 @@ const HeroSection = () => {
           Silas Wideman
         </h1>
         <p className="text-lg sm:text-xl text-muted-foreground max-w-lg mx-auto mb-6 leading-relaxed">
-          Dependable and hardworking team player with a positive attitude, ready to contribute wherever needed.
+          Highly motivated and dependable team player with excellent stamina, a positive attitude, and exceptional soft skills.
         </p>
         <div className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground rounded-full px-4 py-2 text-sm font-medium">
           <MapPin className="w-4 h-4 text-primary" />

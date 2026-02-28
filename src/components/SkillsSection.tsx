@@ -6,27 +6,27 @@ const categories = [
   {
     title: "Grounds & Animal Care",
     icon: Leaf,
-    skills: ["Mowing & Edging", "Weed-eating", "Tree Trimming", "Fence Repair", "Livestock Feeding", "Watering & Irrigation", "Pen Cleaning", "General Ranch Tasks"],
+    skills: ["Yard Work", "Horse Grooming", "Post-Event Cleanup", "General Facility Upkeep"],
   },
   {
     title: "Youth Mentorship",
     icon: Users,
-    skills: ["Group Facilitation", "One-on-One Mentoring", "Activity Planning", "Positive Role Modeling", "Communication"],
+    skills: ["Group Coordination", "Child Supervision (Ages 8-16)", "Activity Management", "Event Support"],
   },
   {
     title: "General Skills",
     icon: Wrench,
-    skills: ["Physical Stamina", "Punctuality", "Following Instructions", "Safety Awareness", "Teamwork", "Adaptability"],
+    skills: ["Following Multi-Step Verbal Directions", "Safety Procedures", "Time Management", "Teamwork", "Communication", "Customer Interaction"],
   },
   {
     title: "Janitorial & Maintenance",
     icon: Sparkles,
-    skills: ["Sweeping & Mopping", "Restroom Sanitation", "Trash Removal", "Supply Restocking", "Floor Care", "Surface Disinfecting"],
+    skills: ["Interior & Exterior Cleaning", "Sweeping", "Trash Removal", "Window Cleaning", "Property Upkeep"],
   },
   {
     title: "Logistics & Processing",
     icon: Package,
-    skills: ["Assembly Line Work", "Quality Control Checks", "Packaging", "Labeling", "Workplace Safety Compliance"],
+    skills: ["Commercial Recyclable Sorting", "Stocking", "Product Facing", "Equipment Operation (Baler/Pallet Jack)"],
   },
 ];
 
