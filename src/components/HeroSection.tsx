@@ -1,4 +1,4 @@
-import { MapPin, ChevronDown, Download } from "lucide-react";
+import { MapPin, ChevronDown, Download, Mail, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
@@ -16,6 +16,26 @@ const HeroSection = () => {
         <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto mb-6 leading-relaxed">
           Highly motivated and dependable team player with nearly two years of verifiable employment, exceptional soft skills, and a positive attitude.
         </p>
+
+        {/* Contact info */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
+          <a
+            href="mailto:silas.j.wideman@gmail.com"
+            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Mail className="w-4 h-4 text-primary" />
+            silas.j.wideman@gmail.com
+          </a>
+          <span className="hidden sm:inline text-border">|</span>
+          <a
+            href="tel:+14802959955"
+            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Phone className="w-4 h-4 text-primary" />
+            (480) 295-9955 · Call or Text
+          </a>
+        </div>
+
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <div className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground rounded-full px-4 py-2 text-sm font-medium">
             <MapPin className="w-4 h-4 text-primary" />
