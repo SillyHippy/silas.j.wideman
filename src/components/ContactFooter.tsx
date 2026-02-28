@@ -20,11 +20,11 @@ const ContactFooter = () => {
             silaswideman@gmail.com
           </a>
           <a
-            href="tel:+19189023562"
+            href="tel:+14802959955"
             className="inline-flex items-center gap-2 bg-card border border-border/60 rounded-full px-5 py-3 text-sm font-medium text-foreground hover:bg-secondary transition-colors shadow-sm"
           >
             <Phone className="w-4 h-4 text-primary" />
-            (918) 902-3562
+            (480) 295-9955
           </a>
           <div className="inline-flex items-center gap-2 bg-card border border-border/60 rounded-full px-5 py-3 text-sm font-medium text-muted-foreground shadow-sm">
             <MapPin className="w-4 h-4 text-primary" />
