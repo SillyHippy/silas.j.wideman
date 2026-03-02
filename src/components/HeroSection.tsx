@@ -1,5 +1,6 @@
 import { MapPin, ChevronDown, Download, Mail, Phone } from "lucide-react";
 import { motion } from "framer-motion";
+import silasPhoto from "@/assets/silas-photo.png";
 
 const HeroSection = () => {
   return (
@@ -8,7 +9,11 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        className="flex flex-col items-center"
       >
+        <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden mb-6 ring-4 ring-primary/20 shadow-lg">
+          <img src={silasPhoto} alt="Silas Wideman" className="w-full h-full object-cover object-top" />
+        </div>
         <p className="text-lg text-muted-foreground mb-2 font-medium">👋 Hello, I'm</p>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-extrabold text-foreground mb-4">
           Silas Wideman
